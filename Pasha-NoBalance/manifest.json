@@ -1,0 +1,49 @@
+{
+	"name": "NoBalance",
+	"namespace": "Pasha",
+	"version_number": "0.1.0",
+	"description": "Settings that completely break the balance of the game, at your own risk.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": [
+				"Pasha"
+			],
+			"compatible_mod_loader_version": ["6.0.0"],
+			"compatible_game_version": ["1.0.0.3"],
+            "config_schema": {
+				"title": "Rainbow Crate Settings",
+				"description": "Config for Rainbow Crate",
+				"type" : "object",
+				"properties" : {
+                    "PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER" : {
+                        "type": "number",
+						"minimum": 1.0,
+						"maximum": 100.0,
+						"default": 1.0,
+                        "format": "%1.0f X",
+						"tooltip": "PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER_TOOLTIP"
+					},
+                    "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER" : {
+                        "type": "number",
+						"minimum": 1.0,
+						"maximum": 100.0,
+						"default": 1.0,
+						"format": "%1.0f X",
+						"tooltip": "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER_TOOLTIP"
+					},
+                    "PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER" : {
+                        "type": "number",
+						"minimum": 1.0,
+						"maximum": 100.0,
+						"default": 1.0,
+						"format": "%1.0f X",
+						"tooltip": "PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER_TOOLTIP"
+					}
+				},
+			}
+		}
+	}
+}
