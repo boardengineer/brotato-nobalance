@@ -17,7 +17,6 @@ func on_group_spawn_timing_reached(group_data:WaveGroupData, _is_elite_wave:bool
 		if unit_wave_data.type == EntityType.ENEMY:
 			duped_data.min_number *= enemy_multiplier
 			duped_data.max_number *= enemy_multiplier
-			print_debug(duped_data.max_number)
 		elif unit_wave_data.type == EntityType.NEUTRAL:
 			duped_data.min_number *= tree_multiplier
 			duped_data.max_number *= tree_multiplier
