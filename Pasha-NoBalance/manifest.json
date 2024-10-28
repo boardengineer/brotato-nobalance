@@ -14,8 +14,8 @@
 			"compatible_mod_loader_version": ["6.0.0"],
 			"compatible_game_version": ["1.0.0.3"],
             "config_schema": {
-				"title": "Rainbow Crate Settings",
-				"description": "Config for Rainbow Crate",
+				"title": "No-balance Settings",
+				"description": "Settings for customizing balance-breaking options",
 				"type" : "object",
 				"properties" : {
                     "PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER" : {
@@ -26,22 +26,22 @@
                         "format": "%1.0f X",
 						"tooltip": "PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER_TOOLTIP"
 					},
-                    "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER" : {
-                        "type": "number",
-						"minimum": 1.0,
-						"maximum": 100.0,
-						"default": 1.0,
-						"format": "%1.0f X",
-						"tooltip": "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER_TOOLTIP"
-					},
                     "PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER" : {
                         "type": "number",
 						"minimum": 1.0,
 						"maximum": 100.0,
 						"default": 1.0,
-						"format": "%1.0f X",
+                        "format": "%1.0f X",
 						"tooltip": "PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER_TOOLTIP"
-					}
+					},
+                    "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER" : {
+                        "type": "number",
+						"minimum": 1.0,
+						"maximum": 100.0,
+						"default": 1.0,
+                        "format": "%1.0f X",
+						"tooltip": "PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER_TOOLTIP"
+					},
 				},
 			}
 		}

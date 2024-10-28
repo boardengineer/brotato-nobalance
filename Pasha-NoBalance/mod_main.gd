@@ -8,7 +8,7 @@ var translation_dir
 
 var options_node_script = load("res://mods-unpacked/Pasha-NoBalance/no_balance_options.gd")
 
-func _init(_modLoader = ModLoader):
+func _init():
 	dir = ModLoaderMod.get_unpacked_dir() + MOD_DIR
 	extension_dir = dir + "extensions/"
 	translation_dir = dir + "translations/"

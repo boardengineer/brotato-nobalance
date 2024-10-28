@@ -1,7 +1,7 @@
 key,en
 PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER,Enemy Spawn Rate Multiplier
-PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER_TREE,"Increase or decrease the spawn rate for normal enemies.  At 1.0X, enemies will spawn normally."
+PASHA_NO_BALANCE_ENEMY_SPAWN_MULTIPLIER_TOOLTIP,"Increase or decrease the spawn rate for normal enemies.  At 1.0X, enemies will spawn normally."
 PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER,Tree Spawn Rate Multiplier
-PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER_TREE,"Increase or decrease the spawn rate for trees.  At 1.0X, trees will spawn normally."
+PASHA_NO_BALANCE_TREE_SPAWN_MULTIPLIER_TOOLTIP,"Increase or decrease the spawn rate for trees.  At 1.0X, trees will spawn normally."
 PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER,Boss Spawn Rate Multiplier
-PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER_TREE,"Increase or decrease the spawn rate for elites and bosses.  At 1.0X, they will spawn normally."
+PASHA_NO_BALANCE_BOSS_SPAWN_MULTIPLIER_TOOLTIP,"Increase or decrease the spawn rate for elites and bosses.  At 1.0X, they will spawn normally."

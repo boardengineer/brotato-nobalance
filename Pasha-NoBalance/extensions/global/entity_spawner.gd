@@ -1,6 +1,6 @@
 extends "res://global/entity_spawner.gd"
 
-func on_group_spawn_timing_reached(group_data:WaveGroupData, _is_elite_wave:bool) -> void:
+func on_group_spawn_timing_reached(group_data:WaveGroupData) -> void:
 	var no_balance_options = $"/root/PashaNoBalanceOptions"
 	
 	var enemy_multiplier = no_balance_options.enemy_spawn_multiplier
@@ -29,7 +29,7 @@ func on_group_spawn_timing_reached(group_data:WaveGroupData, _is_elite_wave:bool
 		new_group_data.wave_units_data.push_back(duped_data)
 	
 	_current_wave_data.max_enemies = 10_000
-	.on_group_spawn_timing_reached(new_group_data, _is_elite_wave)
+	.on_group_spawn_timing_reached(new_group_data)
 
 func _physics_process(_delta:float)->void :
 	
@@ -40,8 +40,9 @@ func _physics_process(_delta:float)->void :
 	max_mult = max(max_mult, no_balance_options.boss_spawn_multiplier)
 	
 	for _i in (max_mult / SPAWN_DELAY - 1):
-		if queue_to_spawn_structures.size() > 0:
-			spawn(queue_to_spawn_structures)
+		# TODO something multiplayer?
+		if queues_to_spawn_structures[0].size() > 0:
+			spawn(queues_to_spawn_structures[0])
 		if queue_to_spawn_trees.size() > 0:
 			spawn(queue_to_spawn_trees)
 		if queue_to_spawn_bosses.size() > 0:
