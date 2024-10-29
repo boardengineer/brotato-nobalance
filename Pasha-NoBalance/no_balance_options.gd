@@ -17,7 +17,6 @@ func _ready():
 	mod_configs_interface.connect("setting_changed", self, "setting_changed")
 
 func setting_changed(key:String, value, mod) -> void:
-	print_debug(key, " ", value, " ", mod)
 	if mod != MOD_NAME:
 		return
 		
@@ -32,7 +31,6 @@ func setting_changed(key:String, value, mod) -> void:
 	save_configs()
 
 func load_configs() -> void:
-	print_debug("loading config?")
 	var mod_configs_interface = get_node("/root/ModLoader/dami-ModOptions/ModsConfigInterface")
 	
 	var config = ConfigFile.new()
@@ -57,5 +55,4 @@ func save_configs() -> void:
 	config.set_value(CONFIG_SECTION, TREE_MULTIPLIER_KEY, tree_spawn_multiplier)
 	config.set_value(CONFIG_SECTION, BOSS_MULTIPLIER_KEY, boss_spawn_multiplier)
 	
-	print_debug("config saved ", OS.get_data_dir())
 	config.save(CONFIG_FILENAME)
